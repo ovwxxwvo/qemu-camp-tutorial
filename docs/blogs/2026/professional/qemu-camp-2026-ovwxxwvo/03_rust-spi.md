@@ -208,6 +208,7 @@ impl SSIBus {
     pub fn transfer      // 完成数据收发传输  
 }  
 ```  
+
 - 未作总线事件分层抽象，数据收发逻辑统一封装在单一传输函数，有待优化。  
 
 ### 🧩 SSI_SLAVE的实现框架  
@@ -229,6 +230,7 @@ impl SSISlave for AT25Slave {
     fn transfer  // 单字节数据收发处理  
 }  
 ```  
+
 - 未作总线事件回调机制，只能依靠新增结构体字段，有待完善。  
 
 ---  
